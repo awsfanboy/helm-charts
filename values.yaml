@@ -1,0 +1,49 @@
+# Application Configuration
+namePrefix: devopswithzack
+
+image:
+  repository: awsfanboy/doggo-app
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+replicaCount: 6
+
+# Service Configuration
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+
+# PDB Configuration
+podDisruptionBudget:
+  minAvailable: "80%"
+
+# Container Resources
+resources:
+  requests:
+    cpu: "100m"
+    memory: "128Mi"
+  limits:
+    cpu: "200m"
+    memory: "256Mi"
+
+# HPA Configuration
+hpa:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 12
+  targetCPUUtilizationPercentage: 50
+
+# Ingress Configuration
+ingress:
+  className: eks-auto-alb
+  annotations:
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/scheme: internet-facing
+  path: /
+  pathType: Prefix
+
+# IngressClass Configuration
+ingressClass:
+  name: eks-auto-alb
+  controller: eks.amazonaws.com/alb
