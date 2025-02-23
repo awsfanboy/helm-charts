@@ -5,7 +5,7 @@ metadata:
   annotations:
     {{- toYaml .Values.ingress.annotations | nindent 4 }}
 spec:
-  ingressClassName: {{ .Values.ingress.className }}
+  ingressClassName: {{ .Values.namePrefix }}-ingress-class
   rules:
     - http:
         paths:

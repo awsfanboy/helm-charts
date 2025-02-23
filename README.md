@@ -17,6 +17,7 @@ If you are using EKS Auto Mode this chart is application ready. You can deploy t
 
 - Kubernetes 1.29+
 - Helm 3.0+
+- ingressCalass is a cluster-scoped resource. Since this chart creates an ingressClass resource, and you need to have the necessary permissions to create it.
 
 ## Configuration
 
@@ -25,6 +26,7 @@ The following table lists the configurable parameters of the chart and their def
 | Parameter                         | Description                                | Default                 |
 |-----------------------------------|--------------------------------------------|-------------------------|
 | `namePrefix`                      | Prefix for resource names                  | `devopswithzack`        |
+| `namespace`                       | Namespace                                  | `default`               |
 | `image.repository`                | Image repository                           | `awsfanboy/doggo-app`   |
 | `image.tag`                       | Image tag                                  | `latest`                |
 | `image.pullPolicy`                | Image pull policy                          | `IfNotPresent`          |

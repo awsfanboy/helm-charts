@@ -1,6 +1,8 @@
 # Application Configuration
 namePrefix: devopswithzack
 
+namespace: zack
+
 image:
   repository: awsfanboy/doggo-app
   tag: "latest"
