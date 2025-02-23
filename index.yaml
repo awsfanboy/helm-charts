@@ -3,6 +3,16 @@ entries:
   eks-app-helm-chart:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-02-23T04:28:18.183431059Z"
+    description: A generic Helm chart for an App to deploy to EKS
+    digest: 875e921b99f7f2fef2f6cd8ec27e541008fb35b6324ed27c136702d4db62da47
+    icon: https://awsfanboy.com/assets/eks-app-helm-chart.png
+    name: eks-app-helm-chart
+    urls:
+    - https://github.com/awsfanboy/helm-charts/releases/download/eks-app-helm-chart-0.1.1/eks-app-helm-chart-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-02-23T04:13:59.689596692Z"
     description: A generic Helm chart for an App to deploy to EKS
     digest: 96d6128dcf4471d6c5e4dcfd5df4661d0ef8eece5294bb49f350bff448419032
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/awsfanboy/eks-app-helm-chart/releases/download/eks-app-helm-chart-0.1.0/eks-app-helm-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-23T04:13:59.689601741Z"
+generated: "2025-02-23T04:28:18.183439284Z"
