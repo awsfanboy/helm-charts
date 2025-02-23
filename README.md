@@ -49,7 +49,7 @@ The following table lists the configurable parameters of the chart and their def
 | `ingressClass.controller`         | Ingress class controller                   | `eks.amazonaws.com/alb` |
 | `hpa.enabled`                     | Enable HPA                                 | `true`                  |
 | `hpa.minReplicas`                 | Minimum replicas                           | `3`                     |
-| `hpa.maxReplicas`                 | Maximum replicas                           | `12`                    |
+| `hpa.maxReplicas`                 | Maximum replicas                           | `18`                    |
 | `hpa.targetCPUUtilizationPercentage`| Target CPU utilization percentage         | `50`                    |
 
 ### Deploying the Application
