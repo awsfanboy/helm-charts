@@ -3,3 +3,4 @@ name: eks-app-helm-chart
 description: A generic Helm chart for an App to deploy to EKS
 version: 0.1.0
 appVersion: "1.0.0"
+icon: https://awsfanboy.com/assets/eks-app-helm-chart.png
