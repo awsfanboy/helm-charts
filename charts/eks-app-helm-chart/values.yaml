@@ -31,7 +31,7 @@ resources:
 hpa:
   enabled: true
   minReplicas: 3
-  maxReplicas: 12
+  maxReplicas: 18
   targetCPUUtilizationPercentage: 50
 
 # Ingress Configuration

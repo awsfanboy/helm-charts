@@ -50,8 +50,6 @@ The following table lists the configurable parameters of the chart and their def
 | `hpa.maxReplicas`                 | Maximum replicas                           | `12`                    |
 | `hpa.targetCPUUtilizationPercentage`| Target CPU utilization percentage         | `50`                    |
 
-## Usage
-
 ### Deploying the Application
 
 To deploy the application, use the following command:
