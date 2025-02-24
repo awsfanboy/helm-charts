@@ -5,7 +5,7 @@ The chart creates a deployment, a service, a pod disruption budget, an ingress r
 
 ## Amazon EKS Auto Mode
 
-If you are using EKS Auto Mode this chart is application ready. You can deploy the chart as is, and it will create the necessary resources for you.
+If you are using EKS Auto Mode this chart is application ready. You can deploy the chart as it is, and it will create the necessary resources for you.
 
 - IngressClass Controller: `eks.amazonaws.com/alb` by default, if you are using a different ingress controller, you can change the `ingressClass.controller` value.
 - Ingress Annotations: since the default IngressClass Controller is `eks.amazonaws.com/alb`, the default annotations are set to `alb.ingress.kubernetes.io/target-type: ip` and `alb.ingress.kubernetes.io/scheme: internet-facing`. If you are using a different ingress controller, you can change the `ingress.annotations` value. 
