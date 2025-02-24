@@ -35,12 +35,10 @@ The following table lists the configurable parameters of the chart and their def
 | `resources.limits.cpu`            | CPU resource limits                        | `200m`                  |
 | `resources.limits.memory`         | Memory resource limits                     | `256Mi`                 |
 | `replicaCount`                    | Number of replicas                         | `6`                     |
-| `service.name`                    | Service name                               | `zack-service`          |
 | `service.type`                    | Service type                               | `NodePort`              |
 | `service.port`                    | Service port                               | `80`                    |
 | `service.targetPort`              | Target port                                | `80`                    |
 | `podDisruptionBudget.minAvailable`| Minimum available pods                     | `80%`                   |
-| `ingress.name`                    | Ingress name                               | `zack-ingress`          |
 | `ingress.className`               | Ingress class name                         | `eks-auto-alb`          |
 | `ingress.annotations`             | Ingress annotations                        | `{}`                    |
 | `ingress.path`                    | Ingress path                               | `/`                     |
