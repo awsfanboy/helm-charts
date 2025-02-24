@@ -56,8 +56,14 @@ The following table lists the configurable parameters of the chart and their def
 
 To deploy the application, use the following command:
 
+local:
 ```sh
 helm install my-release ./eks-app-helm-chart
+```
+
+remote:
+```sh
+helm install my-release 'eks-app-helm-chart' --repo https://helm.awsfanboy.com/
 ```
 
 ### Contrubution Guidelines
